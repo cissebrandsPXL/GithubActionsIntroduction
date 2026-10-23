@@ -1,0 +1,15 @@
+name: Steps Examples
+
+on:
+ 
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: mkdir testmachine
+      - run: uname -a > ./testmachine/output.txt
+      - run: cat ./testmachine/output.txt
+      - run: ls -alhR testmachine
