@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Installing Python
-        uses: actions/python@v3.13
+        uses: actions/setup-python@v5
+        with:
+            python-version: '3.13'
       - name: run a python command
-        run: my_script.py
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run: python my_script.py
