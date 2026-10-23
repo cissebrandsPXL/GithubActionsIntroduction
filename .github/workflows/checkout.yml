@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@V4.2.2
+        uses: actions/checkout@v4.2.2
