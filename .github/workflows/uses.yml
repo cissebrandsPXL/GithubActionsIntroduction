@@ -13,6 +13,6 @@ jobs:
       - name: Installing Python
         uses: actions/python@v3.13
       - name: run a python command
-        run: |
+        run: my_script.py
           echo Add other actions to build,
           echo test, and deploy your project.
